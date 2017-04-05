@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="JobPosting.aspx.vb" Inherits="Projects_Chartwells_JobPosting" %>
+﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="JobPosting.aspx.vb" Inherits="Projects_Chartwells_JobPosting" %>
 
 <!DOCTYPE html>
 
