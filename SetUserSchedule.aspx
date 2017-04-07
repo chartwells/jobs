@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="false" CodeFile="JobPosting.aspx.cs" Inherits="Projects_Chartwells_JobPosting" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SetUserSchedule.aspx.cs" Inherits="SetUserSchedule" %>
 
 <!DOCTYPE html>
 
@@ -8,8 +8,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="margin-left: 120px">
-            <asp:Label ID="JobDate" runat="server" Text="Job Date"></asp:Label>
+    <div style="margin-left: 120px">
+            <asp:Label ID="JobDate" runat="server" Text="Available Date"></asp:Label>
             </br>
             <asp:DropDownList ID="DD_DateMonth" runat="server">
                 <asp:ListItem Text="1" Value="01"></asp:ListItem>
@@ -135,20 +135,9 @@
                 <asp:ListItem Text="PM" Value="PM"></asp:ListItem>  
             </asp:DropDownList>
             </br>
-            <asp:Label ID="Area" runat="server" Text="Area">
-            </asp:Label> 
-            <asp:DropDownList ID="DD_Area" runat="server">
-                <asp:ListItem Text="All" Value="0"></asp:ListItem>
-                <asp:ListItem Text="Sbisa" Value="1"></asp:ListItem>
-                <asp:ListItem Text="Starbucks" Value="2"></asp:ListItem>
-                <asp:ListItem Text="MSC" Value="3"></asp:ListItem> 
-            </asp:DropDownList>
-            </br>
             <asp:Button ID="JobPostingSubmit" runat="server" Text="Submit" OnClick="JobPostingSubmit_Click" />
             </br>
             <asp:Label ID="ErrorLabel" runat="server" Visible="false"></asp:Label>
-            <br />
-            <asp:Label ID="MailLabel" runat="server" Visible="False"></asp:Label>
         </div>
     </form>
 </body>
